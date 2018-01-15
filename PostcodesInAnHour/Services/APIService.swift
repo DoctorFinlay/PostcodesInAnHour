@@ -24,7 +24,7 @@ class APIService {
         case parish
         case region
         case country
-        case constituency
+        case parliamentary_constituency
         
     }
     
@@ -59,7 +59,7 @@ class APIService {
             let parish = json[jsonKeys.result.rawValue][jsonKeys.parish.rawValue].stringValue
             let region = json[jsonKeys.result.rawValue][jsonKeys.region.rawValue].stringValue
             let country = json[jsonKeys.result.rawValue][jsonKeys.country.rawValue].stringValue
-            let constituency = json[jsonKeys.result.rawValue][jsonKeys.constituency.rawValue].stringValue
+            let constituency = json[jsonKeys.result.rawValue][jsonKeys.parliamentary_constituency.rawValue].stringValue
             self.currentLocation = Location(postcode: postcode, parish: parish, region: region, country: country, constituency: constituency)
             
         } catch {
