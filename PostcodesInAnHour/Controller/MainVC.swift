@@ -16,26 +16,17 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == TO_RESULTS_VC {
-//            let DestVC: ResultsVC = segue.destination as! ResultsVC
-//            if let postcode = textField.text {
-//                DestVC.postcodeToParse = postcode
-//            }
-//        }
-//    }
+
     
     
     @IBAction func btnPressed(_ sender: Any) {
         
         if textField.text != "" {
-            
-            APIService.instance.getLocation(postcode: textField.text!, completion: { (success) in
+            let postcodeToTrim = textField.text!
+            let trimmedPostcode = postcodeToTrim.removingWhitespaces()
+            APIService.instance.getLocation(postcode: trimmedPostcode, completion: { (success) in
                 if success {
                     self.performSegue(withIdentifier: TO_RESULTS_VC, sender: nil)
                 } else {
@@ -55,7 +46,6 @@ class MainVC: UIViewController {
         DispatchQueue.main.async {
             self.present(alert, animated: true, completion: nil)
         }
-    
     }
 
 

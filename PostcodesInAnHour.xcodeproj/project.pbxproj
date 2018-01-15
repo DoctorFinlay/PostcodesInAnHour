@@ -16,6 +16,7 @@
 		00C28C33200D0C4400C6AF7E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C28C32200D0C4400C6AF7E /* APIService.swift */; };
 		00C28C35200D0C6900C6AF7E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C28C34200D0C6900C6AF7E /* Location.swift */; };
 		00C28C37200D10A700C6AF7E /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C28C36200D10A700C6AF7E /* ResultsVC.swift */; };
+		00C28C39200D1C2F00C6AF7E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C28C38200D1C2F00C6AF7E /* Extensions.swift */; };
 		87727CE45AB44D153D74FB92 /* Pods_PostcodesInAnHour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B40306AED5398B75410967 /* Pods_PostcodesInAnHour.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		00C28C32200D0C4400C6AF7E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		00C28C34200D0C6900C6AF7E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		00C28C36200D10A700C6AF7E /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		00C28C38200D1C2F00C6AF7E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55B40306AED5398B75410967 /* Pods_PostcodesInAnHour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostcodesInAnHour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87806EE63D89786F7474266F /* Pods-PostcodesInAnHour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostcodesInAnHour.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostcodesInAnHour/Pods-PostcodesInAnHour.release.xcconfig"; sourceTree = "<group>"; };
 		C22231DDD32EEE8A93D5A7AF /* Pods-PostcodesInAnHour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostcodesInAnHour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostcodesInAnHour/Pods-PostcodesInAnHour.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				00C28C30200D0BC300C6AF7E /* Constants.swift */,
+				00C28C38200D1C2F00C6AF7E /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				00C28C35200D0C6900C6AF7E /* Location.swift in Sources */,
 				00C28C33200D0C4400C6AF7E /* APIService.swift in Sources */,
 				00C28C31200D0BC300C6AF7E /* Constants.swift in Sources */,
+				00C28C39200D1C2F00C6AF7E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

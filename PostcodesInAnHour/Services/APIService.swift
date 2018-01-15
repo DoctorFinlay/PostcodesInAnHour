@@ -61,13 +61,10 @@ class APIService {
             let country = json[jsonKeys.result.rawValue][jsonKeys.country.rawValue].stringValue
             let constituency = json[jsonKeys.result.rawValue][jsonKeys.parliamentary_constituency.rawValue].stringValue
             self.currentLocation = Location(postcode: postcode, parish: parish, region: region, country: country, constituency: constituency)
-            
         } catch {
             print(error)
         }
-        
     }
-    
     
     
     
